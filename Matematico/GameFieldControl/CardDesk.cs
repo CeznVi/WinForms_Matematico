@@ -39,7 +39,5 @@ namespace Matematico.GameFieldControl
         }
 
 
-        
-            
     }
 }
