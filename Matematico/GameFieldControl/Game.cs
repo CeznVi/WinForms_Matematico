@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Matematico.GameFieldControl
 {
@@ -22,6 +23,15 @@ namespace Matematico.GameFieldControl
         /// </summary>
         public CardDesk CardDeskComputer { get; set; }
 
+        ////---------------------------------------------------------------------------/////
+
+        ////-----------------------------------------------Конструкторы
+        public Game(TableLayoutControlCollection Player, TableLayoutControlCollection Pc, Button btnNextNumb) 
+        {
+            CardDeskPlayer = new CardDesk(Player);
+            CardDeskComputer = new CardDesk(Pc);
+            _btnNextNumber = btnNextNumb;
+        }
         ////---------------------------------------------------------------------------/////
 
 

@@ -2,19 +2,21 @@ using Matematico.GameFieldControl;
 
 namespace Matematico
 {
-    public partial class Form1 : Form
+    public partial class Form_Main : Form
     {
         private Game _game;
 
 
-        public Form1()
+        public Form_Main()
         {
             InitializeComponent();
-            _game = new Game();
-            _game.CardDeskPlayer = new CardDesk(gameFieldControl_Player.Buttons);
-            _game.CardDeskComputer = new CardDesk(gameFieldControl_Computer.Buttons);
-            _game._btnNextNumber = button_nextNumber;
-            
+            _game = new Game(gameFieldControl_Player.Buttons, gameFieldControl_Computer.Buttons, button_nextNumber);
+
+            //_game.CardDeskPlayer = new CardDesk(gameFieldControl_Player.Buttons);
+            //_game.CardDeskComputer = new CardDesk(gameFieldControl_Computer.Buttons);
+            //_game._btnNextNumber = button_nextNumber;
+
+
             _game.InitPlayerButton();
         }
 

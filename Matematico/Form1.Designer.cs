@@ -1,6 +1,6 @@
 ﻿namespace Matematico
 {
-    partial class Form1
+    partial class Form_Main
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Main));
             statusStrip = new StatusStrip();
             toolStripStatusLabel_info = new ToolStripStatusLabel();
             menuStrip1 = new MenuStrip();
@@ -93,19 +94,19 @@
             Player.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
             Player.Location = new Point(153, 24);
             Player.Name = "Player";
-            Player.Size = new Size(89, 37);
+            Player.Size = new Size(92, 37);
             Player.TabIndex = 4;
-            Player.Text = "Player";
+            Player.Text = "Игрок";
             // 
             // Computer
             // 
             Computer.AutoSize = true;
             Computer.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            Computer.Location = new Point(652, 24);
+            Computer.Location = new Point(646, 24);
             Computer.Name = "Computer";
-            Computer.Size = new Size(136, 37);
+            Computer.Size = new Size(161, 37);
             Computer.TabIndex = 5;
-            Computer.Text = "Computer";
+            Computer.Text = "Компьютер";
             // 
             // button_nextNumber
             // 
@@ -118,10 +119,11 @@
             button_nextNumber.Text = "13";
             button_nextNumber.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Form_Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(928, 529);
             Controls.Add(button_nextNumber);
             Controls.Add(Computer);
@@ -130,9 +132,15 @@
             Controls.Add(gameFieldControl_Player);
             Controls.Add(statusStrip);
             Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
-            Name = "Form1";
-            Text = "Form1";
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "Form_Main";
+            SizeGripStyle = SizeGripStyle.Hide;
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Игра Математико (52)";
             Load += Form1_Load;
             statusStrip.ResumeLayout(false);
             statusStrip.PerformLayout();
