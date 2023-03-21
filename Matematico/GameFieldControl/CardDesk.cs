@@ -37,5 +37,9 @@ namespace Matematico.GameFieldControl
         {
             get { return _cards; }
         }
+
+
+        
+            
     }
 }

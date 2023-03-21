@@ -14,13 +14,12 @@ namespace Matematico.GameFieldControl
     {
         public TableLayoutControlCollection Buttons;
 
-
         public GameFieldControl()
         {
             InitializeComponent();
             Buttons = tableLayoutPanel.Controls;
         }
 
-        
+
     }
 }

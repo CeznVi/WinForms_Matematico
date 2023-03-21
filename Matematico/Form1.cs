@@ -13,11 +13,16 @@ namespace Matematico
             _game = new Game();
             _game.CardDeskPlayer = new CardDesk(gameFieldControl_Player.Buttons);
             _game.CardDeskComputer = new CardDesk(gameFieldControl_Computer.Buttons);
+            _game._btnNextNumber = button_nextNumber;
+            
+            _game.InitPlayerButton();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
+
+
     }
 }
