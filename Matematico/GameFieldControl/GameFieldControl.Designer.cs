@@ -110,6 +110,7 @@
             button_24.Name = "button_24";
             button_24.Size = new Size(94, 94);
             button_24.TabIndex = 24;
+            button_24.TabStop = false;
             button_24.UseVisualStyleBackColor = true;
             // 
             // button_23
@@ -120,6 +121,7 @@
             button_23.Name = "button_23";
             button_23.Size = new Size(94, 94);
             button_23.TabIndex = 23;
+            button_23.TabStop = false;
             button_23.UseVisualStyleBackColor = true;
             // 
             // button_22
@@ -130,6 +132,7 @@
             button_22.Name = "button_22";
             button_22.Size = new Size(94, 94);
             button_22.TabIndex = 22;
+            button_22.TabStop = false;
             button_22.UseVisualStyleBackColor = true;
             // 
             // button_21
@@ -140,6 +143,7 @@
             button_21.Name = "button_21";
             button_21.Size = new Size(94, 94);
             button_21.TabIndex = 21;
+            button_21.TabStop = false;
             button_21.UseVisualStyleBackColor = true;
             // 
             // button_20
@@ -150,6 +154,7 @@
             button_20.Name = "button_20";
             button_20.Size = new Size(94, 94);
             button_20.TabIndex = 20;
+            button_20.TabStop = false;
             button_20.UseVisualStyleBackColor = true;
             // 
             // button_19
@@ -160,6 +165,7 @@
             button_19.Name = "button_19";
             button_19.Size = new Size(94, 94);
             button_19.TabIndex = 19;
+            button_19.TabStop = false;
             button_19.UseVisualStyleBackColor = true;
             // 
             // button_18
@@ -170,6 +176,7 @@
             button_18.Name = "button_18";
             button_18.Size = new Size(94, 94);
             button_18.TabIndex = 18;
+            button_18.TabStop = false;
             button_18.UseVisualStyleBackColor = true;
             // 
             // button_17
@@ -180,6 +187,7 @@
             button_17.Name = "button_17";
             button_17.Size = new Size(94, 94);
             button_17.TabIndex = 17;
+            button_17.TabStop = false;
             button_17.UseVisualStyleBackColor = true;
             // 
             // button_16
@@ -190,6 +198,7 @@
             button_16.Name = "button_16";
             button_16.Size = new Size(94, 94);
             button_16.TabIndex = 16;
+            button_16.TabStop = false;
             button_16.UseVisualStyleBackColor = true;
             // 
             // button_15
@@ -200,6 +209,7 @@
             button_15.Name = "button_15";
             button_15.Size = new Size(94, 94);
             button_15.TabIndex = 15;
+            button_15.TabStop = false;
             button_15.UseVisualStyleBackColor = true;
             // 
             // button_14
@@ -210,6 +220,7 @@
             button_14.Name = "button_14";
             button_14.Size = new Size(94, 94);
             button_14.TabIndex = 14;
+            button_14.TabStop = false;
             button_14.UseVisualStyleBackColor = true;
             // 
             // button_13
@@ -220,6 +231,7 @@
             button_13.Name = "button_13";
             button_13.Size = new Size(94, 94);
             button_13.TabIndex = 13;
+            button_13.TabStop = false;
             button_13.UseVisualStyleBackColor = true;
             // 
             // button_12
@@ -230,6 +242,7 @@
             button_12.Name = "button_12";
             button_12.Size = new Size(94, 94);
             button_12.TabIndex = 12;
+            button_12.TabStop = false;
             button_12.UseVisualStyleBackColor = true;
             // 
             // button_11
@@ -240,6 +253,7 @@
             button_11.Name = "button_11";
             button_11.Size = new Size(94, 94);
             button_11.TabIndex = 11;
+            button_11.TabStop = false;
             button_11.UseVisualStyleBackColor = true;
             // 
             // button_10
@@ -250,6 +264,7 @@
             button_10.Name = "button_10";
             button_10.Size = new Size(94, 94);
             button_10.TabIndex = 10;
+            button_10.TabStop = false;
             button_10.UseVisualStyleBackColor = true;
             // 
             // button_9
@@ -260,6 +275,7 @@
             button_9.Name = "button_9";
             button_9.Size = new Size(94, 94);
             button_9.TabIndex = 9;
+            button_9.TabStop = false;
             button_9.UseVisualStyleBackColor = true;
             // 
             // button_8
@@ -270,6 +286,7 @@
             button_8.Name = "button_8";
             button_8.Size = new Size(94, 94);
             button_8.TabIndex = 8;
+            button_8.TabStop = false;
             button_8.UseVisualStyleBackColor = true;
             // 
             // button_7
@@ -280,6 +297,7 @@
             button_7.Name = "button_7";
             button_7.Size = new Size(94, 94);
             button_7.TabIndex = 7;
+            button_7.TabStop = false;
             button_7.UseVisualStyleBackColor = true;
             // 
             // button_6
@@ -290,6 +308,7 @@
             button_6.Name = "button_6";
             button_6.Size = new Size(94, 94);
             button_6.TabIndex = 6;
+            button_6.TabStop = false;
             button_6.UseVisualStyleBackColor = true;
             // 
             // button_5
@@ -300,6 +319,7 @@
             button_5.Name = "button_5";
             button_5.Size = new Size(94, 94);
             button_5.TabIndex = 5;
+            button_5.TabStop = false;
             button_5.UseVisualStyleBackColor = true;
             // 
             // button_4
@@ -310,6 +330,7 @@
             button_4.Name = "button_4";
             button_4.Size = new Size(94, 94);
             button_4.TabIndex = 4;
+            button_4.TabStop = false;
             button_4.UseVisualStyleBackColor = true;
             // 
             // button_3
@@ -320,6 +341,7 @@
             button_3.Name = "button_3";
             button_3.Size = new Size(94, 94);
             button_3.TabIndex = 3;
+            button_3.TabStop = false;
             button_3.UseVisualStyleBackColor = true;
             // 
             // button_2
@@ -330,6 +352,7 @@
             button_2.Name = "button_2";
             button_2.Size = new Size(94, 94);
             button_2.TabIndex = 2;
+            button_2.TabStop = false;
             button_2.UseVisualStyleBackColor = true;
             // 
             // button_1
@@ -340,6 +363,7 @@
             button_1.Name = "button_1";
             button_1.Size = new Size(94, 94);
             button_1.TabIndex = 1;
+            button_1.TabStop = false;
             button_1.UseVisualStyleBackColor = true;
             // 
             // button_0
@@ -350,6 +374,7 @@
             button_0.Name = "button_0";
             button_0.Size = new Size(94, 94);
             button_0.TabIndex = 0;
+            button_0.TabStop = false;
             button_0.UseVisualStyleBackColor = true;
             // 
             // GameFieldControl

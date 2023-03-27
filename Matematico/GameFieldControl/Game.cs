@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -10,135 +11,142 @@ namespace Matematico.GameFieldControl
 {
     class Game
     {
-        ////-----------------------------------------------Свойства, переменные,ссылки
-        /// <summary>
-        /// Ссылка на кнопку(колоду ведущего) для доступа к ней
-        /// </summary>
-        public Button _btnNextNumber;
-        /// <summary>
-        /// Свойство-ссылка на игральную доску игрока
-        /// </summary>
-        public CardDesk CardDeskPlayer { get; set; }
-        /// <summary>
-        /// Свойство-ссылка на игральную доску компьютера
-        /// </summary>
-        public CardDesk CardDeskComputer { get; set; }
+        public int _сurrentNumber = 0;
+        private Random _rand;
+        private List<int> _numbers;         // 52
 
-        ////---------------------------------------------------------------------------/////
+        public Player Player { get; set; }
+        public Player Comp { get; set; }
+        public CardDeck CardDeckPlayer { get; set; }
+        public CardDeck CardDeckComputer { get; set; }
 
-        ////-----------------------------------------------Конструкторы
-        public Game(TableLayoutControlCollection Player, TableLayoutControlCollection Pc, Button btnNextNumb) 
+        public event EventHandler<int> OnNextNumberChanged;
+
+        protected virtual void OnNextNumberChangedCompleted(int number)
         {
-            CardDeskPlayer = new CardDesk(Player);
-            CardDeskComputer = new CardDesk(Pc);
-            _btnNextNumber = btnNextNumb;
+            OnNextNumberChanged?.Invoke(this, number);
         }
-        ////---------------------------------------------------------------------------/////
 
+        public event EventHandler<Player> OnGameFinished;
 
-
-        ////-----------------------------------------------Приватные методы
-        /// <summary>
-        /// Медод подписки кнопок игрока на событие клик
-        /// </summary>
-        public void InitPlayerButton()
+        protected virtual void OnGameFinishedCompleted(Player winner)
         {
-            foreach (var item in CardDeskPlayer.Cards)
+            OnGameFinished?.Invoke(this, winner);
+        }
+
+        public Game(CardDeck cardDeckPlayer, CardDeck CardDeckComp)
+        {
+            _rand = new Random();
+            _numbers = new List<int>();
+
+            CardDeckPlayer = cardDeckPlayer;
+            CardDeckComputer = CardDeckComp;
+
+            foreach (var oneRowCard in CardDeckPlayer.Cards)
             {
-                foreach (var card in item)
+                foreach (var oneCard in oneRowCard)
                 {
-                    card.Button.Click += button_Click;
+                    oneCard.Button.Click += Button_Click;
                 }
             }
         }
 
-        ////---------------------------------------------------------------------------/////
-
-
-        ////-----------------------------------------------События
-        /// <summary>
-        /// Событие клик которое присвает значение карты(общей) нажатой кнопке
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void button_Click(object sender, EventArgs e)
+        private void Button_Click(object sender, EventArgs e)
         {
-            if(((Button)sender).Text == string.Empty) 
-            {
-                int num = int.Parse(_btnNextNumber.Text);
-                string btn_name = ((Button)sender).Name;
 
-                foreach (var item in CardDeskPlayer.Cards)
+            Button tmp = (Button)sender;
+            Card currentCard = null;
+            foreach (var oneRowCard in CardDeckPlayer.Cards)
+            {
+                foreach (var oneCard in oneRowCard)
                 {
-                    foreach(var card in item)
+                    if (oneCard.Button == tmp)
                     {
-                        if(card.Button.Name == btn_name)
-                        {
-                            card.Button.Text = num.ToString();
-                            card.Points = num;
-                        }
+                        currentCard = oneCard;
                     }
                 }
-                //int btn_num = int.Parse(((Button)sender).Name.Split("_")[1]);
-                //((Button)sender).Text = num.ToString();
-                //((Card)sender).Points = num;
+            }
+
+            if (currentCard.Button.Enabled == true)
+            {
+                currentCard.Button.Text = CurrentNumber.ToString();
+                currentCard.Button.Enabled = false;
+                currentCard.Points = CurrentNumber;
+                CompStep();
+                if (_numbers.Count == 27)
+                {
+                    //кто победитель определить сдесь!!!
+                    OnGameFinishedCompleted(CheckWinner());
+                }
+                else
+                {
+                    GetNextNumber();
+                }
             }
         }
-        ////---------------------------------------------------------------------------/////
 
-        private List<int> _numbers;
-
-        public  Game()
+        private Player CheckWinner()
         {
-            _numbers = new List<int>();
-           
+            if (CardDeckPlayer.GetPoints() > CardDeckComputer.GetPoints())
+            {
+                return Player;
+            }
+            else if (CardDeckPlayer.GetPoints() < CardDeckComputer.GetPoints())
+            {
+                return Comp;
+            }
+            else
+            {
+                return null;
+            }
         }
+
+        /// <summary>
+        /// Ход компьютера
+        /// </summary>
+        private void CompStep()
+        {
+
+        }
+
         private void _fillNumbers()
         {
             _numbers.Clear();
-            for(int i = 0; i < 4; i++) 
-            { 
-                for(int j=1; j<14;j++)
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 1; j < 14; j++)
                 {
-                    _numbers.Add(i);
+                    _numbers.Add(j);
                 }
-            
             }
         }
 
-        bool _isGameMode = false;
-
-        //public bool GameStatus
-        //{
-        //    get { return _isGameMode; }
-
-        //    set
-        //    {
-        //            _fillNumbers();
-        //            _isGameMode = value;
-        //    }
-        //}
-    
         public void NewGame()
         {
             _fillNumbers();
-            CardDeskPlayer.Clear();
-            CardDeskComputer.Clear();
+            CardDeckPlayer.Clear();
+            CardDeckComputer.Clear();
         }
 
-        private Random _rand;
-        public int GetNumber()
+        public int CurrentNumber
+        {
+            get { return _сurrentNumber; }
+            private set
+            {
+                _сurrentNumber = value;
+            }
+        }
+
+        public int GetNextNumber()
         {
             int randIndex = _rand.Next(0, _numbers.Count - 1);
- 
-            int randValue = _numbers[randIndex];
-
+            CurrentNumber = _numbers[randIndex];
             _numbers.RemoveAt(randIndex);
+            OnNextNumberChangedCompleted(CurrentNumber);
 
-
-            return randValue;
-
+            return CurrentNumber;
         }
-
     }
+
+
 }

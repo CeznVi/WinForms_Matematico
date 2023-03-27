@@ -154,7 +154,6 @@
             SizeGripStyle = SizeGripStyle.Hide;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Игра Математико (52)";
-            Load += Form1_Load;
             statusStrip.ResumeLayout(false);
             statusStrip.PerformLayout();
             menuStrip1.ResumeLayout(false);
