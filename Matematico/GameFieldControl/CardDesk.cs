@@ -23,7 +23,7 @@ namespace Matematico.GameFieldControl
             int ind = 0;
             foreach (Button oneBut in buttons)
             {
-                oneBut.Font = new Font(FontFamily.GenericSansSerif, 25);
+                //oneBut.Font = new Font(FontFamily.GenericSansSerif, 25);
                 _cards[counter / 5][ind] = new Card();
                 _cards[counter / 5][ind].Button = oneBut;
                 _cards[counter / 5][ind].Points = 0;
@@ -39,5 +39,16 @@ namespace Matematico.GameFieldControl
         }
 
 
+        public void Clear()
+        {
+            for(int r=0; r < _cards.Length; r++)
+            {
+                for(int c = 0; _cards[r].Length > c; c++)
+                {
+                    _cards[r][c].Points = 0;
+                    _cards[r][c].Button.Text = "";
+                }
+            }
+        }
     }
 }

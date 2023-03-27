@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -84,5 +85,60 @@ namespace Matematico.GameFieldControl
             }
         }
         ////---------------------------------------------------------------------------/////
+
+        private List<int> _numbers;
+
+        public  Game()
+        {
+            _numbers = new List<int>();
+           
+        }
+        private void _fillNumbers()
+        {
+            _numbers.Clear();
+            for(int i = 0; i < 4; i++) 
+            { 
+                for(int j=1; j<14;j++)
+                {
+                    _numbers.Add(i);
+                }
+            
+            }
+        }
+
+        bool _isGameMode = false;
+
+        //public bool GameStatus
+        //{
+        //    get { return _isGameMode; }
+
+        //    set
+        //    {
+        //            _fillNumbers();
+        //            _isGameMode = value;
+        //    }
+        //}
+    
+        public void NewGame()
+        {
+            _fillNumbers();
+            CardDeskPlayer.Clear();
+            CardDeskComputer.Clear();
+        }
+
+        private Random _rand;
+        public int GetNumber()
+        {
+            int randIndex = _rand.Next(0, _numbers.Count - 1);
+ 
+            int randValue = _numbers[randIndex];
+
+            _numbers.RemoveAt(randIndex);
+
+
+            return randValue;
+
+        }
+
     }
 }

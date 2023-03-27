@@ -105,7 +105,7 @@
             // button_24
             // 
             button_24.Dock = DockStyle.Fill;
-            button_24.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_24.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_24.Location = new Point(403, 403);
             button_24.Name = "button_24";
             button_24.Size = new Size(94, 94);
@@ -115,7 +115,7 @@
             // button_23
             // 
             button_23.Dock = DockStyle.Fill;
-            button_23.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_23.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_23.Location = new Point(303, 403);
             button_23.Name = "button_23";
             button_23.Size = new Size(94, 94);
@@ -125,7 +125,7 @@
             // button_22
             // 
             button_22.Dock = DockStyle.Fill;
-            button_22.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_22.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_22.Location = new Point(203, 403);
             button_22.Name = "button_22";
             button_22.Size = new Size(94, 94);
@@ -135,7 +135,7 @@
             // button_21
             // 
             button_21.Dock = DockStyle.Fill;
-            button_21.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_21.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_21.Location = new Point(103, 403);
             button_21.Name = "button_21";
             button_21.Size = new Size(94, 94);
@@ -145,7 +145,7 @@
             // button_20
             // 
             button_20.Dock = DockStyle.Fill;
-            button_20.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_20.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_20.Location = new Point(3, 403);
             button_20.Name = "button_20";
             button_20.Size = new Size(94, 94);
@@ -155,7 +155,7 @@
             // button_19
             // 
             button_19.Dock = DockStyle.Fill;
-            button_19.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_19.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_19.Location = new Point(403, 303);
             button_19.Name = "button_19";
             button_19.Size = new Size(94, 94);
@@ -165,7 +165,7 @@
             // button_18
             // 
             button_18.Dock = DockStyle.Fill;
-            button_18.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_18.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_18.Location = new Point(303, 303);
             button_18.Name = "button_18";
             button_18.Size = new Size(94, 94);
@@ -175,7 +175,7 @@
             // button_17
             // 
             button_17.Dock = DockStyle.Fill;
-            button_17.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_17.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_17.Location = new Point(203, 303);
             button_17.Name = "button_17";
             button_17.Size = new Size(94, 94);
@@ -185,7 +185,7 @@
             // button_16
             // 
             button_16.Dock = DockStyle.Fill;
-            button_16.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_16.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_16.Location = new Point(103, 303);
             button_16.Name = "button_16";
             button_16.Size = new Size(94, 94);
@@ -195,7 +195,7 @@
             // button_15
             // 
             button_15.Dock = DockStyle.Fill;
-            button_15.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_15.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_15.Location = new Point(3, 303);
             button_15.Name = "button_15";
             button_15.Size = new Size(94, 94);
@@ -205,7 +205,7 @@
             // button_14
             // 
             button_14.Dock = DockStyle.Fill;
-            button_14.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_14.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_14.Location = new Point(403, 203);
             button_14.Name = "button_14";
             button_14.Size = new Size(94, 94);
@@ -215,7 +215,7 @@
             // button_13
             // 
             button_13.Dock = DockStyle.Fill;
-            button_13.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_13.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_13.Location = new Point(303, 203);
             button_13.Name = "button_13";
             button_13.Size = new Size(94, 94);
@@ -225,7 +225,7 @@
             // button_12
             // 
             button_12.Dock = DockStyle.Fill;
-            button_12.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_12.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_12.Location = new Point(203, 203);
             button_12.Name = "button_12";
             button_12.Size = new Size(94, 94);
@@ -235,7 +235,7 @@
             // button_11
             // 
             button_11.Dock = DockStyle.Fill;
-            button_11.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_11.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_11.Location = new Point(103, 203);
             button_11.Name = "button_11";
             button_11.Size = new Size(94, 94);
@@ -245,7 +245,7 @@
             // button_10
             // 
             button_10.Dock = DockStyle.Fill;
-            button_10.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_10.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_10.Location = new Point(3, 203);
             button_10.Name = "button_10";
             button_10.Size = new Size(94, 94);
@@ -255,7 +255,7 @@
             // button_9
             // 
             button_9.Dock = DockStyle.Fill;
-            button_9.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_9.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_9.Location = new Point(403, 103);
             button_9.Name = "button_9";
             button_9.Size = new Size(94, 94);
@@ -265,7 +265,7 @@
             // button_8
             // 
             button_8.Dock = DockStyle.Fill;
-            button_8.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_8.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_8.Location = new Point(303, 103);
             button_8.Name = "button_8";
             button_8.Size = new Size(94, 94);
@@ -275,7 +275,7 @@
             // button_7
             // 
             button_7.Dock = DockStyle.Fill;
-            button_7.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_7.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_7.Location = new Point(203, 103);
             button_7.Name = "button_7";
             button_7.Size = new Size(94, 94);
@@ -285,7 +285,7 @@
             // button_6
             // 
             button_6.Dock = DockStyle.Fill;
-            button_6.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_6.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_6.Location = new Point(103, 103);
             button_6.Name = "button_6";
             button_6.Size = new Size(94, 94);
@@ -295,7 +295,7 @@
             // button_5
             // 
             button_5.Dock = DockStyle.Fill;
-            button_5.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_5.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_5.Location = new Point(3, 103);
             button_5.Name = "button_5";
             button_5.Size = new Size(94, 94);
@@ -305,7 +305,7 @@
             // button_4
             // 
             button_4.Dock = DockStyle.Fill;
-            button_4.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_4.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_4.Location = new Point(403, 3);
             button_4.Name = "button_4";
             button_4.Size = new Size(94, 94);
@@ -315,7 +315,7 @@
             // button_3
             // 
             button_3.Dock = DockStyle.Fill;
-            button_3.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_3.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_3.Location = new Point(303, 3);
             button_3.Name = "button_3";
             button_3.Size = new Size(94, 94);
@@ -325,7 +325,7 @@
             // button_2
             // 
             button_2.Dock = DockStyle.Fill;
-            button_2.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_2.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_2.Location = new Point(203, 3);
             button_2.Name = "button_2";
             button_2.Size = new Size(94, 94);
@@ -335,7 +335,7 @@
             // button_1
             // 
             button_1.Dock = DockStyle.Fill;
-            button_1.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_1.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_1.Location = new Point(103, 3);
             button_1.Name = "button_1";
             button_1.Size = new Size(94, 94);
@@ -345,7 +345,7 @@
             // button_0
             // 
             button_0.Dock = DockStyle.Fill;
-            button_0.Font = new Font("Segoe UI", 35F, FontStyle.Regular, GraphicsUnit.Point);
+            button_0.Font = new Font("Vineta BT", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
             button_0.Location = new Point(3, 3);
             button_0.Name = "button_0";
             button_0.Size = new Size(94, 94);
