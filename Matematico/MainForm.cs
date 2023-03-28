@@ -34,16 +34,7 @@ namespace Matematico
             button_nextNumber.Text = e.ToString();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-            //int[] tmp = new int[5] { 11, 10, 13, 1, 12 };
 
-            //int points = Scoring.CheckTwoIdentialNumbers(tmp);
-            //int pointsTwo = Scoring.CheckTwoPairIdentialNumbers(tmp);
-            //int pointsTwoThree = Scoring.CheckThreeAndTwoIdentialNumbers(tmp);
-            //int pointsTwovals = Scoring.CheckThreeUnitAndTwoThirteenNumbers(tmp);
-            //int pointsCombin = Scoring.CheckCombinationNumbers(tmp);
-        }
 
 
     }

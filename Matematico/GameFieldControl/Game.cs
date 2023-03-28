@@ -56,6 +56,7 @@ namespace Matematico.GameFieldControl
 
             Button tmp = (Button)sender;
             Card currentCard = null;
+
             foreach (var oneRowCard in CardDeckPlayer.Cards)
             {
                 foreach (var oneCard in oneRowCard)

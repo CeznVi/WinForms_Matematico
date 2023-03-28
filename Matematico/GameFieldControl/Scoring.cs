@@ -121,7 +121,26 @@ namespace Matematico.GameFieldControl
         // поиск пяти последовательных чисел не обяз по порядку
         public static int CheckFiveConsecutiveNumbers(int[] arr, bool isColumnOrRow = true)
         {
-            throw new NotImplementedException();
+
+            List<int> tmp = arr.ToList();
+            tmp.Sort();
+
+            bool isConsecutiveNum = false;
+
+            for (int i = 0; i < tmp.Count-2; i++)
+            {
+                if (tmp[i] - tmp[i + 1] == -1)
+                    isConsecutiveNum = true;
+                else
+                    break;
+            }
+
+            if (isConsecutiveNum == true)
+            {
+                return isColumnOrRow ? 50 : 60;
+            }
+            return 0;
+                        
         }
     }
 }
