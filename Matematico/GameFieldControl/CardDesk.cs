@@ -110,6 +110,22 @@ namespace Matematico.GameFieldControl
             return _point;
         }
 
+        public List<Card> GetFreeCards()
+        {
+           List<Card> _freeCards = new();
+
+            foreach (var item in _cards)
+            {
+                foreach (Card card in item)
+                {
+                    if(card.Button.Enabled == true)
+                        _freeCards.Add(card);
+                }
+            }
+
+            return _freeCards;
+        }
+
         /* -------------_______Приватные методы_______------------- */
         /// <summary>
         /// Разбивка двумерного масива на список горизонтальных масивов

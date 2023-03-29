@@ -34,6 +34,11 @@ namespace Matematico.GameFieldControl
             OnGameFinished?.Invoke(this, winner);
         }
 
+        /// <summary>
+        /// Конструткор
+        /// </summary>
+        /// <param name="cardDeckPlayer">Доска игрока</param>
+        /// <param name="CardDeckComp">Доска компьютера</param>
         public Game(CardDeck cardDeckPlayer, CardDeck CardDeckComp)
         {
             _rand = new Random();
@@ -51,6 +56,7 @@ namespace Matematico.GameFieldControl
             }
         }
 
+        ///----------------------------ТЕЛО ИГРЫ В СОБЫТИИ КЛИКА
         private void Button_Click(object sender, EventArgs e)
         {
 
@@ -73,7 +79,9 @@ namespace Matematico.GameFieldControl
                 currentCard.Button.Text = CurrentNumber.ToString();
                 currentCard.Button.Enabled = false;
                 currentCard.Points = CurrentNumber;
+
                 CompStep();
+
                 if (_numbers.Count == 27)
                 {
                     //кто победитель определить сдесь!!!
@@ -112,7 +120,13 @@ namespace Matematico.GameFieldControl
         /// </summary>
         private void CompStep()
         {
+            List<Card> _freeCard = CardDeckComputer.GetFreeCards();
 
+            int index = _rand.Next(0, _freeCard.Count-1);
+
+            _freeCard[index].Points = CurrentNumber;
+            _freeCard[index].Button.Text = CurrentNumber.ToString();
+            _freeCard[index].Button.Enabled = false;
         }
 
         private void fillNumbers()
