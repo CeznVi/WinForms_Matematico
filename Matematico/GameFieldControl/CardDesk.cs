@@ -11,9 +11,13 @@ namespace Matematico.GameFieldControl
 {
     class CardDeck
     {
+        /* -------------_______  Переменные _______------------- */
+        /// <summary>
+        /// Масив для хранение Card
+        /// </summary>
         private Card[][] _cards = new Card[5][];
-
-
+       
+        /* -------------_______  Конструкторы _______------------- */
         public CardDeck(TableLayoutControlCollection buttons)
         {
             for (int i = 0; i < _cards.Length; i++)
@@ -37,8 +41,11 @@ namespace Matematico.GameFieldControl
                 if (ind == 5) ind = 0;
             }
         }
-
-
+        
+        /* -------------_______    Свойства    _______------------- */
+        /// <summary>
+        /// Возвращает _cards
+        /// </summary>
         public Card[][] Cards
         {
             get { return _cards; }
