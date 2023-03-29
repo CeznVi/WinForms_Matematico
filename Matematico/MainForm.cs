@@ -26,16 +26,16 @@ namespace Matematico
 
         private void _game_OnGameFinished(object sender, Player e)
         {
-            MessageBox.Show(e.Login, "Победитель!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            if(e != null)
+                MessageBox.Show($"Победил {e.Login}", "Результаты", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            else
+                MessageBox.Show($"Ничья", "Результаты", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
         }
 
         private void _game_OnNextNumberChanged(object sender, int e)
         {
             button_nextNumber.Text = e.ToString();
         }
-
-
-
-
     }
 }

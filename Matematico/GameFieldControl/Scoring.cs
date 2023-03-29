@@ -63,7 +63,6 @@ namespace Matematico.GameFieldControl
             }
             return 0;
         }
-
         //поиск трех и двух одинаковых чисел    
         public static int CheckThreeAndTwoIdentialNumbers(int[] arr, bool isColumnOrRow = true)
         {
@@ -86,7 +85,6 @@ namespace Matematico.GameFieldControl
             }
             return 0;
         }
-
         //поиск комбинации: 1, 13, 12, 11, 10
         public static int CheckCombinationNumbers(int[] arr, bool isColumnOrRow = true)
         {
@@ -117,7 +115,6 @@ namespace Matematico.GameFieldControl
                 return isColumnOrRow ? 150 : 160;
             }
         }
-        
         // поиск пяти последовательных чисел не обяз по порядку
         public static int CheckFiveConsecutiveNumbers(int[] arr, bool isColumnOrRow = true)
         {

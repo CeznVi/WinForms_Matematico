@@ -13,10 +13,10 @@ namespace Matematico.GameFieldControl
     {
         public int _сurrentNumber = 0;
         private Random _rand;
-        private List<int> _numbers;         // 52
+        private List<int> _numbers;
 
-        public Player Player { get; set; }
-        public Player Comp { get; set; }
+        public Player Player = new() { Login = "Игрок" };
+        public Player Comp = new() { Login = "Компьютер" };
         public CardDeck CardDeckPlayer { get; set; }
         public CardDeck CardDeckComputer { get; set; }
 
@@ -86,8 +86,13 @@ namespace Matematico.GameFieldControl
             }
         }
 
+        /// <summary>
+        /// Возвращает Player победителя
+        /// </summary>
+        /// <returns></returns>
         private Player CheckWinner()
         {
+
             if (CardDeckPlayer.GetPoints() > CardDeckComputer.GetPoints())
             {
                 return Player;
@@ -110,7 +115,7 @@ namespace Matematico.GameFieldControl
 
         }
 
-        private void _fillNumbers()
+        private void fillNumbers()
         {
             _numbers.Clear();
             for (int i = 0; i < 4; i++)
@@ -124,7 +129,7 @@ namespace Matematico.GameFieldControl
 
         public void NewGame()
         {
-            _fillNumbers();
+            fillNumbers();
             CardDeckPlayer.Clear();
             CardDeckComputer.Clear();
         }
