@@ -22,20 +22,38 @@ namespace Matematico
         {
             _game.NewGame();
             button_nextNumber.Text = _game.GetNextNumber().ToString();
+            toolStripStatusLabel_info.Text = "Идет игра";
         }
 
         private void _game_OnGameFinished(object sender, Player e)
         {
-            if(e != null)
-                MessageBox.Show($"Победил {e.Login}", "Результаты", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            string message;
+            
+            if (e != null)
+            {
+                message = $"Победил {e.Login} ";
+            }
             else
-                MessageBox.Show($"Ничья", "Результаты", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            {
+                message = $"Ничья";
+            }
+
+            toolStripStatusLabel_info.Text = message;
+
+            MessageBox.Show(message, "Результаты", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
         }
 
         private void _game_OnNextNumberChanged(object sender, int e)
         {
             button_nextNumber.Text = e.ToString();
+        }
+
+        private void новаяИграToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _game.NewGame();
+            button_nextNumber.Text = _game.GetNextNumber().ToString();
+            toolStripStatusLabel_info.Text = "Идет игра";
         }
     }
 }

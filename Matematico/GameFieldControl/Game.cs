@@ -84,7 +84,6 @@ namespace Matematico.GameFieldControl
 
                 if (_numbers.Count == 27)
                 {
-                    //кто победитель определить сдесь!!!
                     OnGameFinishedCompleted(CheckWinner());
                 }
                 else

@@ -39,6 +39,7 @@
             Computer = new Label();
             button_nextNumber = new Button();
             button_NewGame = new Button();
+            новаяИграToolStripMenuItem = new ToolStripMenuItem();
             statusStrip.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -69,9 +70,10 @@
             // 
             // файлToolStripMenuItem
             // 
+            файлToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { новаяИграToolStripMenuItem });
             файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            файлToolStripMenuItem.Size = new Size(48, 20);
-            файлToolStripMenuItem.Text = "Файл";
+            файлToolStripMenuItem.Size = new Size(46, 20);
+            файлToolStripMenuItem.Text = "Игра";
             // 
             // gameFieldControl_Player
             // 
@@ -131,6 +133,13 @@
             button_NewGame.UseVisualStyleBackColor = true;
             button_NewGame.Click += button_NewGame_Click;
             // 
+            // новаяИграToolStripMenuItem
+            // 
+            новаяИграToolStripMenuItem.Name = "новаяИграToolStripMenuItem";
+            новаяИграToolStripMenuItem.Size = new Size(180, 22);
+            новаяИграToolStripMenuItem.Text = "Новая игра";
+            новаяИграToolStripMenuItem.Click += новаяИграToolStripMenuItem_Click;
+            // 
             // Form_Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -174,5 +183,6 @@
         private Label Computer;
         private Button button_nextNumber;
         private Button button_NewGame;
+        private ToolStripMenuItem новаяИграToolStripMenuItem;
     }
 }
