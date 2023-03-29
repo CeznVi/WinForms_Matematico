@@ -8,7 +8,6 @@ namespace Matematico
     {
         private Game _game;
 
-
         public Form_Main()
         {
             InitializeComponent();
